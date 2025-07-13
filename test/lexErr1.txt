@@ -1,0 +1,5 @@
+{
+    bool x;
+    x := true；
+    while x do read x
+}

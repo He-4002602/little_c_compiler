@@ -1,0 +1,12 @@
+<STMTS> ::= <STMT> <STMTS> 
+            | EMPTY ;
+<STMT> ::= ID <ASSIGN> ;
+<ASSIGN> ::= "=" <EXPR> ";"
+            | ":=" <BOOL> ";" ;
+<STMT> ::= "if" ID "then" <STMT> <ELSE>;
+<ELSE> ::= "else" <STMT>
+            | EMPTY ;
+<STMT> ::= "while" ID "do" <STMT> ;
+<STMT> ::= "{" <STMT> <STMTS> "}" ;
+<STMT> ::= "read" ID ";" ;
+<STMT> ::= "write" ID ";" ;

@@ -1,0 +1,16 @@
+// sum.LITTLEC
+{
+    int item,sum,time;
+    bool cond;
+    sum = 0;
+    item = 1;
+    read time;
+    cond := time>0;
+    while cond do{
+        sum = sum + item;
+        item = item + 1;
+        time = time - 1;
+        cond := time>0;
+    }
+    write sum;
+}

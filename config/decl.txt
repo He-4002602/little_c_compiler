@@ -1,0 +1,8 @@
+<DECLS> ::= <DECL> <DECLS>
+            | EMPTY ;
+<DECL> ::= "int" <NAMES> ";"
+            | "bool" <NAMES> ";" ;
+<NAMES> ::= <NAME> <NAMES'> ;
+<NAMES'> ::= "," <NAME> <NAMES'>
+            | EMPTY ;
+<NAME> ::= ID ;

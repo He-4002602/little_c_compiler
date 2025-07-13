@@ -1,0 +1,5 @@
+{
+    bool abcdefghijklmnopqrstuvwxyz;  
+    abcdefghijklmnopqrstuvwxyz := 123456789;  
+    while x do read x;
+}

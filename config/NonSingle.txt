@@ -1,0 +1,9 @@
+<EXPR'> ::= "#" <EXPR> "#";
+<EXPR> ::= <EXPR> "+" <EXPR>
+            | <EXPR> "-" <EXPR>
+            | <EXPR> "*" <EXPR>
+            | <EXPR> "/" <EXPR>
+            | "(" <EXPR> ")"
+            | M <EXPR>
+            | ID
+            | NUM;

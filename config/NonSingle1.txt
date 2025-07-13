@@ -1,0 +1,19 @@
+<BOOL'> ::= "#" <BOOL> "#";
+<BOOL> ::= <BOOL> "&&" <BOOL>
+            | <BOOL> "||" <BOOL>
+            | "!" <BOOL>
+            | <EXPR> ">" <EXPR> 
+            | <EXPR> ">=" <EXPR> 
+            | <EXPR> "<" <EXPR> 
+            | <EXPR> "<=" <EXPR> 
+            | <EXPR> "==" <EXPR> 
+            | <EXPR> "!=" <EXPR> 
+            | BCONST;
+<EXPR> ::= <EXPR> "+" <EXPR>
+            | <EXPR> "-" <EXPR>
+            | <EXPR> "*" <EXPR>
+            | <EXPR> "/" <EXPR>
+            | "(" <EXPR> ")"
+            | M <EXPR>
+            | ID
+            | NUM;

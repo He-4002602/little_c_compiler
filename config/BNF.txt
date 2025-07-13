@@ -1,0 +1,12 @@
+<EXPR'> ::= "#" <EXPR> "#";
+<EXPR> ::= <EXPR> "+" <TERM>
+            | <EXPR> "-" <TERM>
+            | <TERM>;
+<TERM> ::= <TERM> "*" <NEGA>
+            | <TERM> "/" <NEGA>
+            | <NEGA>;
+<NEGA> ::= <FACTOR>
+            | M <FACTOR>;
+<FACTOR> ::= "(" <EXPR> ")"
+            | ID
+            | NUM;
